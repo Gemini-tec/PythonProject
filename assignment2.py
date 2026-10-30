@@ -1,31 +1,30 @@
+# Simple Calculator
 
-print("SIMPLE CALCULATOR")
-print("Select an Operation")
+print("Select an Operation: ")
 print("1. Add (+)")
-print("2. Subraction (-)")
-print("3. Multiply (*)")
-print("4. Division (/)")
+print("2. Subtract (-)")
+print("3. Multiply (* )")
+print("4. Divide (/ )")
 
-choice = input("Select an operation (1,2,3,4): ")
+choice = input("Enter your choice: ")
 
-num1 = float(input("Enter a number: "))
-num2 = float(input("Enter another number: "))
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
-if choice == 1:
-    results = num1 +num2
+if choice == "1":
+    results = num1 + num2
     print(results)
-if choice == 2:
+elif choice == "2":
     results = num1 - num2
     print(results)
-if choice == 3:
+elif choice == "3":
     results = num1 * num2
     print(results)
-if choice == 4:
+elif choice == "4":
     if num2 == 0:
-        print("CANNOT DIVIDE BY ZERO !!")
+        print("Cannot Divide by zero4")
     else:
         results = num1 / num2
         print(results)
 else:
-    print("INVALID CHOICE!!")
-
+    print("Invalid choice")
